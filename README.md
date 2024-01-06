@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next.js로 Thread만들기
 
-## Getting Started
+## 작업순서
+**초기세팅**
+`npx create-next-app@latest .`
+`npm i`
 
-First, run the development server:
+`npm install @clerk/themes`
+`npx shadcn-ui@latest add form`
+`npx shadcn-ui@latest init`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 사용한 기술
+
+## shadcn 사용
+
+## Tailwind CSS 사용
+Tailwind CSS는 유연하고 확장 가능한 CSS 프레임워크입니다. 일반적인 CSS 프레임워크와는 달리 사전 정의된 클래스를 사용하여 스타일을 적용하는 방식으로 작동합니다. 이 클래스들은 주로 HTML 요소에 직접 적용되어 디자인을 구성하는 데 사용됩니다.
+
+## Clerk 사용
+Clerk는 개발자가 사용자 관리와 인증 기능을 쉽게 구축할 수 있도록 도와주는 플랫폼 중 하나입니다. 사용자 관리, 인증, 권한 부여, 프로필 관리 등을 간편하게 처리할 수 있는 도구로, 개발자들이 보다 빠르고 안전하게 사용자 관리 기능을 구현하는 데 도움을 줍니다.
+
+## 트러블슈팅
+[문제]
+Unhandled Runtime Error
+Error: ClerkInstanceContext not found
+
+[해결]
+```js
+<>
+    <html lang="en">
+        <ClerkProvider>
+            <body className={inter.className}>
+                {children}  
+            </body>
+        </ClerkProvider>
+    </html>
+</>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 스택
