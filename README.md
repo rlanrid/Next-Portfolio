@@ -11,6 +11,8 @@
 
 ## 사용한 기술
 
+## TypeScript 사용
+
 ## shadcn 사용
 
 ## uploadthing 사용
