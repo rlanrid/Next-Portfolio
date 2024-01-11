@@ -97,8 +97,10 @@ const AccountProfile = ({ user, btnTitle }: Props) => {
         });
 
         if (pathname === '/profile/edit') {
+            alert('프로필이 수정되었습니다.');
             router.back();
         } else {
+            alert('프로필이 수정되었습니다.');
             router.push('/');
         }
     }
