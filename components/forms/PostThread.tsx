@@ -56,6 +56,7 @@ function PostThread({ userId }: { userId: string }) {
       path: pathname
     });
 
+    window.alert('스레드가 성공적으로 작성되었습니다.')
     router.push("/")
   }
 
