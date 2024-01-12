@@ -234,14 +234,14 @@ const form = useForm({
     리다이렉트를 수행하기 전에 `userInfo`값이 유효한지 확인하면 된다.
 </details>
 
-## 사이트
+## 📎사이트
 
 인증 서비스 - [clerk](https://clerk.com/)   
 파일 업로드 - [uploadthing](https://uploadthing.com/)   
 배포 - [vercel](https://vercel.com/)   
 
 
-## 스택
+## 📘스택
 <div>
   <a href="#"><img alt="next.js" src="https://img.shields.io/badge/next.js-000000?style=flat&logo=next.js&logoColor=white"></a>
   <a href="#"><img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=Tailwind CSS&logoColor=white"></a>
