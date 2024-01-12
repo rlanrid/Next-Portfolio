@@ -4,7 +4,6 @@ import Link from "next/link"
 import { dark } from '@clerk/themes'
 
 function Topbar() {
-    const isUserLoggedIn = true;
 
     return (
         <nav className="topbar">

@@ -45,6 +45,7 @@ const Comment = ({ threadId, currentUserImg, currentUserId }: Props) => {
         await addCommentToThread(threadId, values.thread, JSON.parse
             (currentUserId), pathname);
 
+        window.alert('리플이 작성되었습니다.');
         form.reset();
     }
 
