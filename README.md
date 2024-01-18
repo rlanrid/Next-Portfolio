@@ -3,12 +3,12 @@
 [참고영상](https://www.youtube.com/watch?v=O5cmLDVTgAs)
 
 ## 🔧초기세팅
-`npx create-next-app@latest .`
-`npm i`
+`npx create-next-app@latest .`   
+`npm i`   
 
-`npm install @clerk/themes`
-`npx shadcn-ui@latest add form`
-`npx shadcn-ui@latest init`
+`npm install @clerk/themes`   
+`npx shadcn-ui@latest add form`   
+`npx shadcn-ui@latest init`   
 
 ## 🧾개념 정리
 - TypeScript   
